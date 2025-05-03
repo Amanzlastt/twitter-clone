@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import connectMongoDB from "./db/connectMongoDB.js";
 import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from 'cloudinary';
+import postRoutes from "./routes/post.route.js";
+import notificationRoutes from "./routes/notification.route.js";
 
 dotenv.config()
 cloudinary.config({
@@ -23,6 +25,8 @@ app.use(express.urlencoded({ extended: true}));
 app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/post", postRoutes);
+app.use("/api/notification", notificationRoutes);
 
 
 app.listen(PORT, ()=>{
