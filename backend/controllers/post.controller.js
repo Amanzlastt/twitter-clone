@@ -41,7 +41,7 @@ export const deletePost = async (req, res)=>{
         }
         if (post.img){
             const imgId = post.img.split("/").pop().split(".")[0];
-            await clooudinary.uploader.destroy(imgId);
+            await cloudinary.uploader.destroy(imgId);
         }
         await Post.findByIdAndDelete(req.params.id); //delete the post from mongo
     } catch (error) {
