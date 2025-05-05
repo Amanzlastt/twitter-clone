@@ -1,22 +1,9 @@
-function XSvg() {
+function XSvg(props) {
     return (
       <>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          shapeRendering="geometricPrecision"
-          textRendering="geometricPrecision"
-          imageRendering="optimizeQuality"
-          fillRule="evenodd"
-          clipRule="evenodd"
-          viewBox="0 0 512 509.64"
-        >
-          <rect width="512" height="509.64" rx="115.61" ry="115.61" />
-          <path
-            fill="#fff"
-            fillRule="nonzero"
-            d="M323.74 148.35h36.12l-78.91 90.2 92.83 122.73h-72.69l-56.93-74.43-65.15 74.43h-36.14l84.4-96.47-89.05-116.46h74.53l51.46 68.04 59.53-68.04zm-12.68 191.31h20.02l-129.2-170.82H180.4l130.66 170.82z"
-          />
-        </svg>
+        <svg aria-hidden='true' viewBox='0 0 24 24' {...props}>
+		      <path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z' />
+	      </svg>
       </>
     );
   }
