@@ -1,14 +1,14 @@
 import { useState } from "react";
+import CreatePost from "./createPost";
+import Posts from "../../components/common/Posts";
 
-// import Posts from "../../components/common/Posts";
-// import CreatePost from "./CreatePost";
 
 const HomePage = () => {
 	const [feedType, setFeedType] = useState("forYou");
 
 	return (
 		<>
-			<div className='flex-[4_4_0] mr-auto border-r border-gray-700 min-h-screen ml-2.5'>
+			<div className='flex-[4_4_0] mr-auto border-r border-gray-700 min-h-screen ml-50'>
 				{/* Header */}
 				<div className='flex w-full border-b border-gray-700'>
 					<div
@@ -34,10 +34,10 @@ const HomePage = () => {
 				</div>
 
 				{/*  CREATE POST INPUT */}
-				{/* <CreatePost /> */}
+				<CreatePost />
 
 				{/* POSTS */}
-				{/* <Posts /> */}
+				<Posts />
 			</div>
 		</>
 	);
