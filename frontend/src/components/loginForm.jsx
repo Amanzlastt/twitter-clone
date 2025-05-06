@@ -22,7 +22,7 @@ const LoginForm =()=>{
     }
 
     return(
-        <div className = 'flex mt-10'>
+        <div className = 'flex items-center justify-center mt-10'>
             <form>
                 <XSvg className='w-24 lg:hidden'/>
                 <label className="input  mx-10 my-1.5 rounded-2xl ">

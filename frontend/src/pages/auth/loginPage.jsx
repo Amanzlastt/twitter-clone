@@ -5,9 +5,9 @@ import XSvg from '../../components/svg/XSvg'; // Adjust the import path for XSvg
 
 function LoginForm({ handleChange, handleUser }) {
     return (
-        <div className='flex max-w-screen-xl '>
-            <div className='flex-1 hidden lg:flex items-center' >
-                <XSvg className='lg:w-2/3 fill-black' />
+        <div className='flex flex-col max-w-screen-xl ml-50 '>
+            <div className='hidden lg:flex items-center'>
+                <XSvg className='lg:w-1/3 fill-black' />
             </div>
             <div className='flex mt-10'>
                 <form onSubmit={(e) => { e.preventDefault(); handleUser(); }}>

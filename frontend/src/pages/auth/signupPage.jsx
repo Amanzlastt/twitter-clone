@@ -1,4 +1,4 @@
-import SignUpInput from "../../components/signUpInput";
+// import SignUpInput from "../../components/signUpInput";
 import XSvg from "../../components/svg/XSvg";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
@@ -28,10 +28,9 @@ function SignUpPage(){
         e.preventDefault();
         console.log(userData)
     }
-    
     return <>
-    <div className='max-w-screen-xl flex-row'>
-        <div className='flex-1 hidden md:flex items-center' >
+    <div className='flex flex-row flex-wrap justify-center items-start max-w-screen-xl mx-auto ml-50'>
+        <div className='flex-1 hidden lg:flex items-center' >
             <XSvg className='lg:w-1/3 fill-black' />
         </div>
         <div className='flex-row m-10 mt-16 bg-gray-400 rounded-3xl p-10 box-border' >
@@ -63,9 +62,8 @@ function SignUpPage(){
                     </Link>
                 </div>
             </form>
+        </div>
     </div>
-    </div>
-
     </>
 }
 export default SignUpPage;
