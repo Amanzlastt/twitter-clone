@@ -5,6 +5,8 @@ import LoginPage from "./pages/auth/loginPage";
 import SignUpPage from "./pages/auth/signupPage";
 import SideBar from "./components/common/sideBar";
 import RightPanel from "./components/common/rightBar";
+import NotificationPage from "./pages/notification/Notification";
+import ProfilePage from "./pages/profile/profilePage";
 
 function App () {
   return <>
@@ -15,6 +17,8 @@ function App () {
       <Route path='/login' element={<LoginPage/>}/>
       <Route path='/signup' element={<SignUpPage/>}/>
       <Route path='/' element={<HomePage/>}/>
+      <Route path='/notifications' element={<NotificationPage/>}/>
+      <Route path='/profile' element={<ProfilePage/>}/>
     </Routes>
   <RightPanel/>
   </div>
