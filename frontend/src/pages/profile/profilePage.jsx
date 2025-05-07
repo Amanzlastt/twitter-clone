@@ -31,8 +31,8 @@ const ProfilePage = () => {
 		_id: "1",
 		fullName: "John Doe",
 		username: "johndoe",
-		profileImg: "/avatars/boy2.png",
-		coverImg: "/cover.png",
+		profileImg: "./public/avatars/boy2.png",
+		coverImg: ".public/posts/post1.png",
 		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		link: "https://youtube.com/@asaprogrammer_",
 		following: ["1", "2", "3"],
@@ -53,7 +53,7 @@ const ProfilePage = () => {
 
 	return (
 		<>
-			<div className='flex-[4_4_0]  border-r border-gray-700 min-h-screen '>
+			<div className='ml-50 flex-[4_4_0]  border-r border-gray-700 min-h-screen '>
 				{/* HEADER */}
 				{isLoading && <ProfileHeaderSkeleton />}
 				{!isLoading && !user && <p className='text-center text-lg mt-4'>User not found</p>}
@@ -88,12 +88,14 @@ const ProfilePage = () => {
 								<input
 									type='file'
 									hidden
+									accept = 'image/*'
 									ref={coverImgRef}
 									onChange={(e) => handleImgChange(e, "coverImg")}
 								/>
 								<input
 									type='file'
 									hidden
+									accept = 'image/*'
 									ref={profileImgRef}
 									onChange={(e) => handleImgChange(e, "profileImg")}
 								/>
