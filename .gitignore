@@ -1,4 +1,6 @@
 # Logs
+./.env
+*.env
 logs
 *.log
 npm-debug.log*
@@ -25,5 +27,3 @@ dist-ssr
 
 
 
-.env
-.env/
